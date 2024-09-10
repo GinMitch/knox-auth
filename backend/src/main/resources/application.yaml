@@ -1,0 +1,20 @@
+server:
+  port: 25100
+  servlet:
+    context-path: /api
+
+spring:
+  main:
+    banner-mode: off
+  freemarker:
+    enabled: false
+  groovy:
+    template:
+      enabled: false
+  h2:
+    console:
+      enabled: false
+  mustache:
+    enabled: false
+  thymeleaf:
+    enabled: false

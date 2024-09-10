@@ -1,0 +1,9 @@
+!**/.gitkeep
+
+# IDEs
+/.idea
+.vscode/*
+
+# system files
+.DS_Store
+Thumbs.db

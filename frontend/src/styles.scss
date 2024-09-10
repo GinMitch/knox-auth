@@ -1,0 +1,59 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    font-style: normal;
+    scroll-behavior: smooth;
+
+    --color-k-base-rgb: 255, 255, 255;
+    --color-k-base: rgb(var(--color-k-base-rgb));
+    --color-k-text0: #1a1a1a;
+    --color-k-text1: #4d4d4d;
+    --color-k-line0: #b0b0b0;
+    --color-k-line1: #8897ad;
+    --color-k-accent: #007aff;
+    --color-k-danger: #ff0062;
+
+    --font-family-set: "Source Sans 3", ui-sans-serif, sans-serif, Roboto, "Helvetica Neue", Arial, system-ui,
+        -apple-system;
+
+    font: 400 16px/24px var(--font-family-set);
+}
+
+body {
+    font: inherit;
+    margin: 0;
+}
+
+h1,
+h2,
+p,
+pre {
+    margin: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+h1,
+h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button:not([disabled]) {
+    cursor: pointer;
+}
+
+[hidden] {
+    display: none !important;
+}
