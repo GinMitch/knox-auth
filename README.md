@@ -8,6 +8,9 @@ and [Dev Community](https://dev.to/gin_mitch/building-secure-systems-for-modern-
 - Database Setup, JWT Implementation & API 
 ([Medium](https://medium.com/@gin_mitch/database-setup-jwt-implementation-api-a0519ceca560) 
 and [Dev Community](https://dev.to/gin_mitch/database-setup-jwt-implementation-api-1bk3)) 
+- OpenAPI and Frontend 
+([Medium](https://medium.com/@gin_mitch/openapi-and-frontend-058e0e81cb1d) 
+and [Dev Community](https://dev.to/gin_mitch/openapi-and-frontend-3gnb)) 
 
 ## License
 
