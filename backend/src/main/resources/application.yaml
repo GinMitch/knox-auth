@@ -4,6 +4,21 @@ server:
     context-path: /api
 
 spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:25101/knox_dev_db
+    username: knox_dev_user
+    password: knox_dev_pass
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        types:
+          print:
+            banner: false
   main:
     banner-mode: off
   freemarker:

@@ -1,0 +1,19 @@
+# docker compose -f docker-compose.dev.yml -p knox_dev up -d --build
+version: '3'
+
+services:
+
+  knox_dbdev:
+    container_name: knox_dbdev
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: knox_dev_db
+      POSTGRES_USER: knox_dev_user
+      POSTGRES_PASSWORD: knox_dev_pass
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256
+    volumes:
+      - ./dbdev:/var/lib/postgresql/data
+    ports:
+      - '25101:5432'
+    restart: 'no'

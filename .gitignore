@@ -1,5 +1,8 @@
 !**/.gitkeep
 
+# dev database
+dbdev/*
+
 # IDEs
 /.idea
 .vscode/*
