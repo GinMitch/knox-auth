@@ -24,6 +24,7 @@
         <findsecbugs.version>1.13.0</findsecbugs.version>
         <hypersistence.version>3.8.2</hypersistence.version>
         <jk.persistence.version>3.1.0</jk.persistence.version>
+        <jk.validation.version>3.1.0</jk.validation.version>
         <lombok.version>1.18.34</lombok.version>
         <postgresql.version>42.7.4</postgresql.version>
         <spotbugs-plugin.version>4.8.5.0</spotbugs-plugin.version>
@@ -106,6 +107,11 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>${jk.validation.version}</version>
         </dependency>
         <dependency>
             <groupId>jakarta.persistence</groupId>
