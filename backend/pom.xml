@@ -26,6 +26,7 @@
         <jk.persistence.version>3.1.0</jk.persistence.version>
         <jk.validation.version>3.1.0</jk.validation.version>
         <lombok.version>1.18.34</lombok.version>
+        <openapi-api.version>2.6.0</openapi-api.version>
         <postgresql.version>42.7.4</postgresql.version>
         <spotbugs-plugin.version>4.8.5.0</spotbugs-plugin.version>
         <spotless-plugin.version>2.43.0</spotless-plugin.version>
@@ -127,6 +128,12 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+            <version>${openapi-api.version}</version>
         </dependency>
     </dependencies>
 

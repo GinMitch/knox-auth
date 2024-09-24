@@ -4,6 +4,7 @@ import gin.knox.dto.CookiesResult;
 import gin.knox.dto.LoginRequest;
 import gin.knox.dto.SignupRequest;
 import gin.knox.service.AuthService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
+@Tag(name = "auth")
 @RequiredArgsConstructor
 public class AuthController {
 

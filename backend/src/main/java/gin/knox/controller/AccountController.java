@@ -2,6 +2,7 @@ package gin.knox.controller;
 
 import gin.knox.dto.UserInfo;
 import gin.knox.service.AccountService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/account")
+@Tag(name = "account")
 @RequiredArgsConstructor
 public class AccountController {
 
