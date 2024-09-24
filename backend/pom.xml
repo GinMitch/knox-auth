@@ -20,6 +20,7 @@
         <spring.boot.version>${project.parent.version}</spring.boot.version>
         <spring.security.version>6.3.3</spring.security.version>
 
+        <auth0-jwt.version>4.4.0</auth0-jwt.version>
         <findsecbugs.version>1.13.0</findsecbugs.version>
         <hypersistence.version>3.8.2</hypersistence.version>
         <jk.persistence.version>3.1.0</jk.persistence.version>
@@ -70,6 +71,16 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
             <version>${spring.security.version}</version>
         </dependency>
@@ -85,6 +96,11 @@
             <version>${spring.boot.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>${auth0-jwt.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
