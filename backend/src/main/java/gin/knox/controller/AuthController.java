@@ -52,4 +52,15 @@ public class AuthController {
         res.addCookie(result.getResult()[1]);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
+
+    @PostMapping(value = "/logout")
+    public ResponseEntity<String> logout(
+            HttpServletResponse res
+    ) {
+        CookiesResult result = this.authService.logout();
+
+        res.addCookie(result.getResult()[0]);
+        res.addCookie(result.getResult()[1]);
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
 }

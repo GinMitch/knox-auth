@@ -9,6 +9,9 @@ public interface JwtService {
     @Nullable
     Cookie[] issueCookies(@NonNull String userId, @NonNull String userType);
 
+    @NonNull
+    Cookie[] revokeCookies();
+
     @Nullable
     TokenData parseCookies(Cookie[] cookies);
 }

@@ -10,4 +10,6 @@ public interface AuthService {
     CookiesResult login(@NonNull LoginRequest request);
 
     CookiesResult signup(@NonNull SignupRequest request);
+
+    CookiesResult logout();
 }

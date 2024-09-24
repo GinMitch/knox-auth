@@ -42,6 +42,13 @@ public class JwtServiceImpl implements JwtService {
         };
     }
 
+    public @NonNull Cookie[] revokeCookies() {
+        return new Cookie[]{
+                this.createAuth("", 0),
+                this.createMarker("", 0)
+        };
+    }
+
     private @NonNull Cookie createAuth(@Nullable String value, int maxAge) {
         Cookie cookie = new Cookie(authCookieName, value);
         // cookie.setDomain(""); // todo: set domain from an env variable

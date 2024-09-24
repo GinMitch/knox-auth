@@ -1,5 +1,7 @@
 package gin.knox.controller;
 
+import gin.knox.dto.UserInfo;
+import gin.knox.service.AccountService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,6 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/account")
 @RequiredArgsConstructor
 public class AccountController {
+
+    private final AccountService accountService;
+
+    @GetMapping(value = "/", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<UserInfo> getUser() {
+        UserInfo user = this.accountService.getUser();
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(user);
+    }
 
     @GetMapping(value = "/check/public", produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity<String> getPublic() {

@@ -59,4 +59,10 @@ public class AuthServiceImpl implements AuthService {
                         user.getType().toString()
                 ));
     }
+
+    public CookiesResult logout() {
+        return CookiesResult.success(
+                this.jwtService.revokeCookies()
+        );
+    }
 }
