@@ -46,7 +46,8 @@
           "buildTarget": "knox:build:production"
         },
         "development": {
-          "buildTarget": "knox:build:development"
+          "buildTarget": "knox:build:development",
+          "proxyConfig": "./proxy-local.json"
         }
       },
       "defaultConfiguration": "development"

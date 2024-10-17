@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/@public-js/ng-openapi-gen/src/schema.json",
+  "input": "http://localhost:25100/api/v3/api-docs",
+  "output": "src/api/generated",
+  "verbose": true,
+  "ignoreUnusedModels": false
+}

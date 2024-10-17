@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build"
+    "build": "nx build",
+    "api-gen": "ng-openapi-gen --config ./openapi.json"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +37,7 @@
     "@nx/js": "19.7.2",
     "@nx/workspace": "19.7.2",
     "@public-js/eslint-plugin-node": "~0.1.0",
+    "@public-js/ng-openapi-gen": "~0.0.7",
     "@schematics/angular": "~18.2.0",
     "@types/node": "~18.19.0",
     "@typescript-eslint/eslint-plugin": "~7.18.0",
